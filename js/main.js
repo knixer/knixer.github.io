@@ -77,7 +77,7 @@ const svContent = {
   forBusinessesDesc:
     "Annonsering på vår plattform är ett bra sätt att nå nya kunder och öka er försäljning. " +
     "Vi bedriver riktad marknadsföring, vilket innebär att endast användare med intresse kommer att se er annons. När vi visar annonser för våra användare har vi " +
-    "på förväg sett till att dem är relevanta, intressanta och något användarna kan göra " +
+    "på förväg sett till att dem är relevanta, intressanta och innebär något användarna kan göra " +
     "tillsammans i verkligheten. Vi kommer till exempel aldrig ha annonser för onlineshopping på vår " +
     "plattform. Men alla fysiska företag är välkomna att annonsera hos oss. " +
     "Det finns ett mycket brett spektrum intressen där ute och vi vill erbjuda " +
