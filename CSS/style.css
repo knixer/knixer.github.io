@@ -1,0 +1,252 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 65%;
+  max-width: 1000px !important;
+  margin: 0 auto;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+.intro {
+  display: flex; /* Enables Flexbox */
+  justify-content: space-between; /* Adjusts spacing between items */
+  align-items: center; /* Aligns items vertically */
+  margin-bottom: 1rem;
+}
+.intro-text {
+  /*  flex: 1; Takes up remaining space */
+  padding: 1rem;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: 400px;
+  margin: 5px;
+  border-radius: 20px; /* Add rounded corners */
+}
+
+/* Carousel  */
+.carousel-item img {
+  max-width: 200px; /* Adjust the width */
+  max-height: 400px; /* Adjust the height */
+  margin: auto; /* Center the images */
+  border-radius: 20px; /* Add rounded corners */
+}
+
+.my-carousel-container {
+  max-width: 400px; /* Adjust this value to control the width */
+  margin: 0 auto; /* Centers the carousel */
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-indicators {
+  display: none !important; /* Hide the indicators */
+}
+
+.carousel-text {
+  height: 100px; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the text vertically */
+  align-items: center; /* Center the text horizontally */
+  overflow: hidden; /* Prevent text overflow */
+  text-align: center;
+}
+/* Carousel Caption */
+
+/* nav bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background: black;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+.custom-dropdown {
+  color: white !important; /* Text color */
+  background-color: black !important; /* Background color */
+}
+
+.custom-dropdown:focus {
+  box-shadow: none; /* Removes default focus styling */
+}
+
+#languageDropdown .form-select {
+  border: black !important; /* Border color */
+}
+
+/* nav bar */
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.images img {
+  width: 100%;
+  max-width: 33%;
+  border-radius: 5px;
+}
+
+.hero {
+  background: black;
+  /*
+  background: url("https://via.placeholder.com/1920x1080") no-repeat center
+    center/cover; */
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  height: 250x;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+#hero-text {
+  font-style: italic;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.content div {
+  background: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.redirectLink {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.redirectLink div {
+  cursor: pointer; /* Change cursor to a pointer when hovering */
+}
+
+.redirectLink:hover h3,
+.redirectLink:hover p {
+  color: gray; /* Change text color on hover */
+}
+
+.redirectLink:active h3,
+.redirectLink:active p {
+  color: gray; /* Change text color when clicked */
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .images img {
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .images img {
+    max-width: 100%;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Homepage</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Include Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Language Selector -->
+      <!--
+      <div class="language-selector">
+        <button id="english" class="btn btn-primary bg-black">English</button>
+        <button id="swedish" class="btn btn-primary">Svenska</button>
+      </div>
+
+      <nav>
+        <a href="#home" class="nav-item" id="nav-home">Home</a>
+        <a href="#about" class="nav-item" id="nav-about">About</a>
+        <a href="#services" class="nav-item" id="nav-services">Services</a>
+        <a href="#contact" class="nav-item" id="nav-contact">Contact</a>
+      </nav> -->
+
+      <nav class="d-flex justify-content-between align-items-center">
+        <div>
+          <a href="#about" class="nav-item" id="nav-about">About</a>
+
+          <a href="#for-businesses" class="nav-item" id="nav-for-businesses"
+            >For Businesses</a
+          >
+        </div>
+        <div id="languageDropdown" class="d-flex align-items-center me-4">
+          <select
+            id="languageSelect"
+            class="form-select form-select-sm custom-dropdown"
+          >
+            <option value="en" selected>En</option>
+            <option value="sv">Sv</option>
+          </select>
+        </div>
+      </nav>
+
+      <!--
+      <nav class="d-flex justify-content-between align-items-center">
+        <div>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button
+          id="languageToggle"
+          class="btn btn-light p-0"
+          style="width: 40px; height: 40px; border-radius: 5px"
+        >
+          <img
+            id="languageFlag"
+            src="https://flagcdn.com/w40/us.png"
+            alt="Language Flag"
+            style="width: 110%; height: 110%"
+          />
+        </button>
+      </nav>
+    -->
+      <div class="intro">
+        <div class="intro-text">
+          <h1 id="intro-title">friendzone</h1>
+          <p id="intro-desc">
+            The app that lets you connect with people you vibe with.
+          </p>
+        </div>
+        <!-- Carousel -->
+        <div class="container mt-5 my-carousel-container">
+          <div
+            id="imageCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <!-- Indicators/Dots -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#imageCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#imageCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#imageCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <!-- Carousel Images -->
+            <div class="carousel-inner">
+              <!-- First Slide -->
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div class="text-center">
+                  <img
+                    src="images/Screenshot-filter.png"
+                    class="d-block img-fluid mx-auto"
+                    alt="Image 1"
+                    onerror="this.onerror=null; this.src='https://via.placeholder.com/800x400';"
+                  />
+
+                  <div class="carousel-text mt-3">
+                    <h3 id="carousel-title-1" class="mt-3">Image 1 Title</h3>
+                    <p id="carousel-desc-1">
+                      This is a description or additional text about the first
+                      image. You can customize this text to fit your content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Second Slide -->
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="text-center">
+                  <img
+                    src="images/Screenshot-Hamlet.png"
+                    class="d-block img-fluid mx-auto"
+                    alt="Image 2"
+                    onerror="this.onerror=null; this.src='https://via.placeholder.com/800x400';"
+                  />
+                  <div class="carousel-text mt-3">
+                    <h3 id="carousel-title-2" class="mt-3">Image 2 Title</h3>
+                    <p id="carousel-desc-2">
+                      This is a description or additional text about the second
+                      image.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Third Slide -->
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="text-center">
+                  <img
+                    src="images/Screenshot-questionnaire.png"
+                    class="d-block img-fluid mx-auto"
+                    alt="Image 3"
+                    onerror="this.onerror=null; this.src='https://via.placeholder.com/800x400';"
+                  />
+                  <div class="carousel-text mt-3">
+                    <h3 id="carousel-title-3" class="mt-3">Image 3 Title</h3>
+
+                    <p id="carousel-desc-3">
+                      This is a description or additional text about the third
+                      image.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#imageCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#imageCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="hero">
+        <h4 id="hero-text">A new way of connecting with old and new friends</h4>
+      </div>
+      <!--
+      <br />
+      <hr class="hr hr-blurry" />
+    -->
+      <div class="content">
+        <a
+          href="https://www.psychologytoday.com/intl/blog/the-art-closeness/201602/loneliness-has-antidote-you-may-not-have-thought"
+          class="redirectLink"
+        >
+          <div>
+            <h3 id="section1-title">What defines a good friendship?</h3>
+            <p id="section1-desc">
+              What defines a good friendship? The Author Kira Asatryan tries to
+              answer that in this short article.
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://nypost.com/2019/05/09/why-the-average-american-hasnt-made-a-new-friend-in-5-years/"
+          class="redirectLink"
+        >
+          <div>
+            <h3 id="section2-title">Section 2</h3>
+            <p id="section2-desc">
+              Nulla facilisi. Donec dapibus, eros vel fringilla fermentum.
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://medium.com/personal-growth/the-incredible-power-of-friendship-b061833959c2"
+          class="redirectLink"
+        >
+          <div>
+            <h3 id="section3-title">Section 3</h3>
+            <p id="section3-desc">
+              Etiam aliquet sapien nec orci luctus, ac vehicula ligula
+              consequat.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <hr class="hr hr-blurry" />
+
+      <!-- Form -->
+      <h1 id="for-businesses" style="text-align: center">For Businesses</h1>
+      <p id="for-businesses-desc">
+        Advertisment on our platform is a great way to reach new customers and
+        increase your sales. We conduct targeted marketing, meaning only users
+        with an interest will see your ad. When we deliver ads to our users we
+        make sure that they are relevant, interesting, and something they can do
+        togheter. For example, we will never have ads for online shopping on our
+        platform. But every phyisical business is welcome to advertise with us.
+        Peoples interests are wide and we want to make sure that we can offer
+        something for everyone.
+      </p>
+
+      <form>
+        <div class="form-row d-flex gap-2">
+          <div class="form-group col-md-6">
+            <label for="inputCompanyName" id="form-company-name"
+              >Company name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="inputCompanyName"
+              placeholder=""
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputOrgNumber" id="form-organization-number"
+              >Organization number</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="inputOrgNumber"
+              placeholder=""
+            />
+          </div>
+        </div>
+        <div class="form-row d-flex gap-1">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4" id="form-email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder=""
+            />
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputContactPerson" id="form-contact-person"
+              >Contact person</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="inputContactPerson"
+              placeholder=""
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress" id="form-address">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder=""
+          />
+        </div>
+        <div class="form-row d-flex gap-2">
+          <div class="form-group col-md-5">
+            <label for="inputCity" id="form-city">City</label>
+            <input type="text" class="form-control" id="inputCity" />
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip" id="form-zip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputPhoneNumber" id="form-phonenumber">Phone</label>
+            <input type="text" class="form-control" id="inputPhoneNumber" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label
+              for="form-ad-information-placeholder"
+              id="form-ad-information"
+              >Ad information</label
+            >
+            <textarea
+              class="form-control"
+              id="form-ad-information-placeholder"
+              rows="3"
+              placeholder="What do you want to offer or tell our users?"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputHomepage" id="form-homepage">Homepage</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputHomepage"
+            placeholder="https://..."
+          />
+        </div>
+        <!-- End of Form -->
+
+        <button
+          type="submit"
+          class="mt-3 mb-3 btn text-white bg-black"
+          id="form-send"
+        >
+          Send
+        </button>
+      </form>
+
+      <!--
+      <iframe src="elements/form.html"></iframe>
+    -->
+
+      <footer>
+        <p>&copy; 2024 friendzone</p>
+      </footer>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
