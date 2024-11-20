@@ -81,8 +81,8 @@ const svContent = {
     "tillsammans i verkligheten. Vi kommer till exempel aldrig ha annonser för onlineshopping på vår " +
     "plattform. Men alla fysiska företag är välkomna att annonsera hos oss. " +
     "Det finns ett mycket brett spektrum intressen där ute och vi vill erbjuda " +
-    "något för alla människor. <br><br> Om du är intresserad av att annonsera hos oss, vänligen fyll i formuläret " +
-    "nedan så återkommer vi till dig så snart som möjligt. ",
+    "något för alla människor. <br><br> Om ni är intresserade av att annonsera hos oss, vänligen fyll i formuläret " +
+    "nedan så återkommer vi till er så snart som möjligt. ",
   formCompanyName: "Företagsnamn",
   formOrgNumber: "Organisationsnummer",
   formEmail: "E-post",
