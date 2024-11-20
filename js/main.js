@@ -75,13 +75,13 @@ const svContent = {
   carouselDesc3:
     "Skapa en personlighetsprofil genom våra quiz:ar som vi sedan använder för att hitta folk som matchar med just din personlighet.",
   forBusinessesDesc:
-    "Annonsering på vår plattform är ett bra sätt att nå nya kunder och öka din försäljning. " +
-    "Vi bedriver riktad marknadsföring, vilket innebär att endast användare med intresse kommer att se din annons. När vi visar annonser till våra användare har vi " +
-    "på förväg sett till att dem är relevanta, intressanta och något de kan göra " +
+    "Annonsering på vår plattform är ett bra sätt att nå nya kunder och öka er försäljning. " +
+    "Vi bedriver riktad marknadsföring, vilket innebär att endast användare med intresse kommer att se er annons. När vi visar annonser för våra användare har vi " +
+    "på förväg sett till att dem är relevanta, intressanta och något användarna kan göra " +
     "tillsammans i verkligheten. Vi kommer till exempel aldrig ha annonser för onlineshopping på vår " +
     "plattform. Men alla fysiska företag är välkomna att annonsera hos oss. " +
-    "Det finns ett mycket brett spektrum intressen där ute och vi vill se till att vi kan erbjuda " +
-    "något för alla. <br><br> Om du är intresserad av att annonsera hos oss, vänligen fyll i formuläret " +
+    "Det finns ett mycket brett spektrum intressen där ute och vi vill erbjuda " +
+    "något för alla människor. <br><br> Om du är intresserad av att annonsera hos oss, vänligen fyll i formuläret " +
     "nedan så återkommer vi till dig så snart som möjligt. ",
   formCompanyName: "Företagsnamn",
   formOrgNumber: "Organisationsnummer",
