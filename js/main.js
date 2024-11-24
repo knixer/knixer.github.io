@@ -4,7 +4,7 @@ const enContent = {
   heroText:
     "friendzone is designed to help users find new and meaningful friendships. " +
     "Through personality quizzes and matching algorithms, we help users find people that match their personality and interests. " +
-    "Users are then able to chat with their matches and get offers for activities based on their common interests. ",
+    "Users are then able to chat with their matches",
   section1Title: "What defines a good friendship?",
   section1Desc:
     "The Author Kira Asatryan tries to give us an answer in this article.",
@@ -19,19 +19,16 @@ const enContent = {
   carouselTitle1: "Match with new friends",
   carouselDesc1:
     "Matching system that helps you find new friends based on your personality.",
-  carouselTitle2: "Do something with your new friend",
-  carouselDesc2: "Get different offers based on your common interests.",
+  carouselTitle2: "Interest",
+  carouselDesc2: "Information about an interest",
   carouselTitle3: "Create a personality profile",
   carouselDesc3:
     "Create a personality profile through our quizzes that we then use to find people that match your personality.",
   forBusinessesDesc:
     "Advertisment on our platform is a great way to reach new customers and increase your sales. " +
     "We conduct targeted marketing, meaning only users with an interest will see your ad. When we deliver ads to our users we " +
-    "make sure that they are relevant, interesting, and something they can do " +
-    "togheter. For example, we will never have ads for online shopping on our " +
-    "platform. But every phyisical business is welcome to advertise with us. " +
-    "Peoples interests are wide and we want to make sure that we can offer " +
-    "something for everyone. <br><br>  If you are interested in advertising with us, please fill out the form " +
+    "make sure that they are relevant and interesting" +
+    "<br><br>  If you are interested in advertising with us, please fill out the form " +
     "below and we will get back to you as soon as possible. ",
   formCompanyName: "Company Name",
   formOrgNumber: "Organization Number",
@@ -54,7 +51,7 @@ const svContent = {
   heroText:
     "friendzone är designad för att hjälpa användare hitta nya och meningsfulla vänskaper. " +
     "Genom quizzar och matching-algoritmer hjälper vi användare att hitta personer som matchar deras personlighet och intressen. " +
-    "Användare kan sedan chatta med varandra och få erbjudanden om aktiviteter baserat på deras gemensamma intressen. ",
+    "",
   section1Title: "Vad definierar en bra vänskap?",
   section1Desc:
     "Författaren Kira Asatryan försöker ge oss ett svar i denna artikel.",
@@ -69,19 +66,15 @@ const svContent = {
   carouselTitle1: "Matcha med nya vänner",
   carouselDesc1:
     "Matchingsystem som hjälper dig att hitta nya vänner utifrån din personlighet.",
-  carouselTitle2: "Gör något med din nya vän",
-  carouselDesc2: "Få olika erbjudanden utifrån era gemensamma intressen.",
+  carouselTitle2: "Intressen",
+  carouselDesc2: "Information om intresse",
   carouselTitle3: "Utforma en peronslighetsprofil",
   carouselDesc3:
     "Skapa en personlighetsprofil genom våra quiz:ar som vi sedan använder för att hitta folk som matchar med just din personlighet.",
   forBusinessesDesc:
     "Annonsering på vår plattform är ett bra sätt att nå nya kunder och öka er försäljning. " +
-    "Vi bedriver riktad marknadsföring, vilket innebär att endast användare med intresse kommer att se er annons. När vi visar annonser för våra användare har vi " +
-    "på förväg sett till att dem är relevanta, intressanta och innebär något användarna kan göra " +
-    "tillsammans i verkligheten. Vi kommer till exempel aldrig ha annonser för onlineshopping på vår " +
-    "plattform. Men alla fysiska företag är välkomna att annonsera hos oss. " +
-    "Det finns ett mycket brett spektrum intressen där ute och vi vill erbjuda " +
-    "något för alla människor. <br><br> Om ni är intresserade av att annonsera hos oss, vänligen fyll i formuläret " +
+    "Vi bedriver riktad marknadsföring, vilket innebär att endast användare med intresse kommer att se er annons. " +
+    ". <br><br> Om ni är intresserade av att annonsera hos oss, vänligen fyll i formuläret " +
     "nedan så återkommer vi till er så snart som möjligt. ",
   formCompanyName: "Företagsnamn",
   formOrgNumber: "Organisationsnummer",
